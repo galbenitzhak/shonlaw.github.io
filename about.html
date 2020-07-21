@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en">
+	<head>
+		<title>Shon Ben Itzhak - Israeli Attorney & Notary in California</title>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/about.css">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+	</head>
+	<body>
+		<div class="header">
+			<img id="ladyjustice" src="images/ladyjustice.png"/>
+			<p class="header">SHON BEN-ITZHAK</p>
+			<p class="header2">Israeli Attorney & Notary in California</p>
+		</div>
+		<table class="tabs">
+			<tr class="tabs">
+				<td class="tabs" id="current"> <a class="tabs" href="about.html">About Attorney Shon Ben-Itzhak</a></td>
+				<td class="tabs"> <a class="tabs" href="index.html">Office Profile</a></td>
+				<td class="tabs"> <a class="tabs" href="contact.html">Contact</a></td>
+			</tr>
+		</table>
+		<div class="main">
+			<p>Attorney at Law Shon Ben-Itzhak has a LL.B. degree and was admitted as an attorney by the Israeli Bar Association.<br /><br />
+            Shon Ben-Itzhak has extensive experience and is very successful in his office practices.<br /><br />
+            Attorney Shon Ben-Itzhak is a graduate of a military academy, a Major in the Israeli Air Force. He served ten years in the army and later in the reserved forces.<br /><br />
+            Attorney Shon Ben-Itzhak holds a "commercial pilot license" on multi-engine aircrafts and is also an architect.<br /><br />Shon was also certified as a "director of companies".
+        </p>
+		<img src="images/pilot.jpg" style="height: 275px; display: inline-block; float: left;" id="pilotImg" alt="Commercial Pilot"/>
+		<img src="images/landscape.jpg" style="height: 275px; display: inline-block; float: right;" id="landscapeImg" alt="Landscape Architect"/>
+		</div>
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+		<script>
+				// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var pilotImg = document.getElementById("pilotImg");
+		var landscapeImg = document.getElementById("landscapeImg");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		pilotImg.onclick = landscapeImg.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+		</script>
+	</body>
+</html>
