@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en">
+	<head>
+		<title>Shon Ben Itzhak - Israeli Attorney & Notary</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/office profile.css">
+		<link rel="icon" href="images/ladyjustice.png" type="image">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+	</head>
+	<body>
+		<div class="header">
+			<img id="ladyjustice" src="images/ladyjustice.png"/>
+			<p class="header">SHON BEN-ITZHAK</p>
+			<p class="header2">Israeli Attorney & Notary</p>
+		</div>
+		<table class="tabs">
+			<tr class="tabs">
+				<td class="tabs"> <a class="tabs" href="about.html">About Attorney Shon Ben-Itzhak</a></td>
+				<td class="tabs" id="current"> <a class="tabs" href="http://www.shon-law.com">Office Profile</a></td>
+				<td class="tabs"> <a class="tabs" href="contact.html">Contact</a></td>
+			</tr>
+		</table>
+		<div class="main">
+			<p style="font-size: 25px; font-weight: bold; text-shadow: 1px 1px gray;">Welcome to Attorney at Law Shon Ben-Itzhak's Website!</p>
+			<p>Attorney at law Shon Ben-Itzhak has been practicing law since 2006, in Israel.<br /><br />Attorney at law Shon Ben-Itzhak is a professional Israeli lawyer and provides various types of legal services, including:<br /><span style="text-decoration: underline">
+			Real estate, contracts of any kind, affidavits, family matters, will and inheritance, divorce agreements, civil, damages, and criminal law.</span><br /><br />
+			Attorney at law Shon Ben-Itzhak has a broad experience in Israeli legal practices and can provide comprehensive legal solutions for general and international contracts of any kind, using creative thinking to both consider the client's needs and understand the commercial side.<br /><br />
+			Attorney at law Shon Ben-Itzhak provides each client with personal attention, services, and knowledge. He aims to attain the most and provide the client with professional services without compromises, while communicating with and providing each client with the most suitable services for that client.</p>
+			<img src="images/shon.jpg" style="width: 500px; " class="center" id="shonImg" alt="Attorney at Law Shon Ben-Itzhak"/>
+			
+		</div>
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+		<script>
+		var modal = document.getElementById("myModal");
+
+		var img = document.getElementById("shonImg");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+		</script>
+	</body>
+</html>
