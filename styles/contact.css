@@ -1,0 +1,12 @@
+table.main {
+	width: 808px;
+	background-color: black;
+	padding: 0 0 0 10px;
+	margin: 10px auto 0 auto;
+}
+
+table.main p {
+	font-size: 22px;
+	color: white;
+	text-shadow: 1px 1px gray;
+}
